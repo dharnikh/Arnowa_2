@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { Auth0Provider } from "@auth0/auth0-react";
 // import AuthContextProvider from './Context/AuthContext';
+import AuthContextProvider, { AuthContext } from './Context/AuthContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,7 +17,7 @@ root.render(
     clientId="7cWa4rg3fp0PUt1kaEyay0cSTjR8nZXE"
     redirectUri={window.location.origin}
   >
-   <BrowserRouter><App /></BrowserRouter> 
+   <BrowserRouter><AuthContextProvider><App /></AuthContextProvider></BrowserRouter> 
   </Auth0Provider>,
 
    

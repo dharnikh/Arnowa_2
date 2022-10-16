@@ -3,8 +3,8 @@ import{NavLink} from "react-router-dom"
 import styles from "./Navbar.module.css"
 
 
-const links = [{path:"/login",title:"Login"},
-  {path:"/",title:"Home"},
+const links = [{path:"/",title:"Login"},
+  {path:"/home",title:"Home"},
 
 
 
